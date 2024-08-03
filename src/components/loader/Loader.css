@@ -1,0 +1,57 @@
+.loader {
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #18181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.svg-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader svg {
+  width: 100%;
+  max-width: 150px;
+  animation: svgAnimation 2s infinite ease-in-out;
+}
+
+.loading-text {
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+  transform: translate(0.4rem);
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .loader {
+    justify-content: flex-start;
+    padding-top: 30vh;
+
+    .loader svg {
+      width: 60%;
+    }
+  }
+
+  @keyframes svgAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
