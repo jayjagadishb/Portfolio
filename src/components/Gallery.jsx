@@ -25,6 +25,7 @@ function Gallery() {
                 initial={{ opacity: 0, x: -100 }}
                 transition={{ duration: 1.5 }}
                 src={item.image}
+                loading="lazy"
                 className="w-full h-full max-w-[400px] max-h-[400px] object-cover rounded-lg"
                 alt="gallery"
               />

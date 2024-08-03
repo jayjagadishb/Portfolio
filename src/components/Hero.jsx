@@ -21,7 +21,8 @@ function Hero() {
             <motion.h1
               variants={container(0)}
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
               Jay Jagadish Behera
@@ -53,6 +54,7 @@ function Hero() {
               src={profile}
               alt="jay"
               className="h-3/4"
+              loading="lazy"
             />
           </div>
         </div>

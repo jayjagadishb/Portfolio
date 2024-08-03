@@ -16,7 +16,12 @@ function About() {
           className="w-full lg:w-1/2 lg:p-8"
         >
           <div className="flex items-center justify-center">
-            <img className="rounded-2xl" src={aboutimg} alt="me" />
+            <img
+              className="rounded-2xl"
+              src={aboutimg}
+              alt="me"
+              loading="lazy"
+            />
           </div>
         </motion.div>
         <motion.div

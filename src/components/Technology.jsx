@@ -61,7 +61,7 @@ function Technology() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiExpress className="text-7xl text-gray-800" />
+          <SiExpress className="text-7xl text-white" />
         </motion.div>
         <motion.div
           variants={iconVariants(4.5)}
