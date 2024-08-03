@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Gallery from "./components/Gallery";
-
+import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
     <div className="overflow-x-hidden text-neutral-300 antiliased selection:bg-cyan-300 selection:text-cyan-900">
@@ -26,6 +26,7 @@ function App() {
         <Education />
         <Gallery />
         <Contact />
+        <Analytics />
       </div>
     </div>
   );
